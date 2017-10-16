@@ -1,0 +1,40 @@
+*, ::before, ::after {
+	background-repeat: no-repeat;
+	box-sizing: inherit;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+body {
+    margin: 80px 120px;
+    font: 16px/1 sans-serif;
+}
+h1, h2, h3, p, blockquote, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+main, li, figure, footer, header {
+    display: block;
+}
+h1, h2, h3 {
+    font-size: inherit;
+}
+b, strong {
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+		color: inherit;
+		transition: .3s;
+}
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
