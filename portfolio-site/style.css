@@ -12,8 +12,10 @@ html {
 body {
     margin: 0;
     font: 16px/1 sans-serif;
+		font-family: 'Open Sans', sans-serif;
+		color: #040813;
 }
-h1, h2, h3, h4, p, blockquote, figure, ol, ul {
+h1, h2, h3, p, ol, ul {
     margin: 0;
     padding: 0;
 }
@@ -22,6 +24,7 @@ main, li, figcaption, figure, article, aside, footer, header, nav, section {
 }
 h1, h2, h3, h4 {
     font-size: inherit;
+		font-weight: 700;
 }
 b, strong {
     font-weight: bold;
@@ -33,60 +36,82 @@ a, button {
 a {
     text-decoration: none;
 }
-button {
-    overflow: visible;
-    border: 0;
-    font: inherit;
-    -webkit-font-smoothing: inherit;
-    letter-spacing: inherit;
-    background: none;
-    cursor: pointer;
-}
-::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
 img {
     max-width: 100%;
     height: auto;
     border: 0;
 }
 
-/* Create Grid */
-
-
-nav {
-  grid-area: nav;
-}
+/* Create Grid & Main Style */
 
 header {
+  width: 100%;
+  height: 100vh;
+  background: url(./images/milky-way.jpg) center center;
+  background-size: 100vw;
+  overflow: hidden;
+  position: relative;
   grid-area: hdr;
 }
-
+header::before {
+	  content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,#0f1a32,#040813);
+		opacity: .6;
+	  }
+nav {
+  grid-area: nav;
+  position: relative;
+  align-self: center;
+  top: 92vh;
+  margin: 0 10vw;
+  color: #f4f6fe;
+}
+nav ul {
+	display: flex;
+	justify-content: space-between;
+}
 .aboutMe {
   grid-area: abt;
+	min-height: 250px;
+  padding: 50px 10vw;
+	background-color: #f4f6fe;
 }
-
 .skills {
   grid-area: skl;
+  padding: 50px 10vw;
+	background-color: #c4cce8;
 }
-
 .portfolio {
   grid-area: ptf;
+	min-height: 250px;
+  padding: 50px 10vw;
+	background-color: #6475ae;
 }
-
 .contactForm {
   grid-area: ctf;
+	min-height: 250px;
+  padding: 50px 10vw;
+	background-color: #3f5183;
 }
-
 .socialLinks {
   grid-area: lks;
+	padding: 50px 10vw;
+	background-color: #040813;
+	color: #f4f6fe;
 }
-
 footer {
   grid-area: ftr;
+	background-color: #0f1a32;
+	color: #f4f6fe;
+	min-height: 30px;
+	padding: 30px 10vw;
+	font-size: 12px;
 }
-
 .wrapper {
   display: grid;
   grid-template-areas:
@@ -99,7 +124,18 @@ footer {
   "lks"
   "ftr";
 }
-
+.portfolioItems {
+  list-style: none;
+	margin-top: 25px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+}
+.portfolioItems li {
+  border: 1px solid #c4cce8;
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 750px) {
   .wrapper {
     grid-template-columns: 3fr 1fr;
@@ -111,8 +147,114 @@ footer {
       "ctf lks"
       "ftr ftr"
   }
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-  }
+	nav {
+	  margin: 0 20vw;
+	}
 }
+
+/* Specific Element Styles */
+
+.siteTitle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 3px solid #f4f6fe;
+	color: #f4f6fe;
+	padding: 40px;
+}
+h1 {
+	font-size: 40px;
+	letter-spacing: 5px;
+	word-spacing: 5px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+h2 {
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	padding-top: 10px;
+	line-height: 1.5;
+	text-align: center;
+}
+nav li a:link, a:visited {
+		border: 1px solid #f4f6fe;
+		padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+		text-transform: uppercase;
+		font-size: 13px;
+		letter-spacing: 2px;
+}
+nav li a:hover, a:active {
+    background-color: #aebbd6;
+    color: #0f1a32;
+		border-color: #aebbd6;
+}
+.button a {
+		padding: 5px 10px;
+		margin: 25px 10px 0 0;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+		font-size: 12px;
+		letter-spacing: 1px;
+}
+.light a {
+		border: 1px solid #3f5183;
+		color: #3f5183;
+}
+.dark a {
+		border: 1px solid #c4cce8;
+		color: #c4cce8;
+}
+button {
+	padding: 5px 10px;
+	margin: 25px 10px 0 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: 1px;
+	border: 1px solid #c4cce8;
+	color: #c4cce8;
+	background-color: #3f5183;
+}
+input {
+	width: 100%;
+	background-color: #c4cce8;
+	padding: 10px;
+	margin: 3px 0;
+	border: 1px solid #6475ae;
+	color: #3f5183;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+}
+li img {
+	width: 100%;
+	height: 200px;
+	background-color: #c4cce8;
+	min-width: 0px;
+}
+li p {
+	text-align: center;
+	color: #c4cce8;
+	padding: 10px;
+	font-size: 12px;
+}
+
+/* Color Palette
+#ffffff white
+#f4f6fe offWhite
+#c4cce8 lightGrayBlue
+#6475ae dessaturatedDarkBlue
+#3f5183 darkerBlue
+#0f1a32 veryDarkBlue
+#040813 blackBlue
+*/

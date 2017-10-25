@@ -3,46 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title>Maíra Martins K - Web Developer Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.arbitrary-anchor.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-    <nav>
+    <div class="wrapper" id="top">
+    <header>
+      <div class="siteTitle">
+        <h1>Maíra Martins K</h1>
+        <h2>web developer. highly illogical. beam me up!</h2>
+      </div>
+      <nav>
       <ul>
-        <li class="hideOnTop"><a href="">Back to top</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Visit Blog</a></li>
+        <li><a href="##about">About</a></li>
+        <li><a href="##work">Portfolio</a></li>
+        <li><a href="##contact">Contact</a></li>
+        <li><a href="https://dev.mairamartins.com/" target="_blank">Visit Blog</a></li>
       </ul>
     </nav>
-    <header>
-      Welcome
     </header>
-    <div class="aboutMe">
-      About me
-    </div>
-    <div class="skills">
-      Skills
-    </div>
-    <div class="portfolio">
-      Portfolio items
-      <div class="portfolioItems">
-        <ul>
-          <li class="item1"></li>
-          <li class="item2"></li>
-          <li class="item3"></li>
-          <li class="item4"></li>
-        </ul>
+    <div class="aboutMe" id="about">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius pharetra dolor nec sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer enim elit, dignissim at elit tincidunt, posuere laoreet magna. Fusce cursus bibendum lorem. Aliquam erat volutpat. Etiam mi tortor, dignissim in suscipit vel, eleifend in leo. Maecenas ac tincidunt erat. Suspendisse sem enim, laoreet a imperdiet ut, cursus sit amet urna.</p>
+      <div class="button light">
+        <a href="##work">See my Work</a><a href="##contact">Message Me</a>
       </div>
     </div>
-    <div class="contactForm">
-      Contact form
+    <div class="skills">
+      <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+      </ul>
     </div>
-    <div class="socialLinks">
-      Links
+    <div class="portfolio" id="work">
+      Portfolio items
+      <div>
+        <ul class="portfolioItems">
+          <li><img src="" alt=""><p>item1</p></li>
+          <li><img src="" alt=""><p>item2</p></li>
+          <li><img src="" alt=""><p>item3</p></li>
+          <li><img src="" alt=""><p>item4</p></li>
+        </ul>
+      </div>
+      <div class="button dark">
+        <a href="##contact">Get in Touch</a>
+      </div>
     </div>
-    <footer>footer info</footer>
+    <div class="contactForm" id="contact">
+      Send me a Message
+      <form class="Contact" action="index.html" method="post">
+        <input type="text" name="Name" value="Name"><br>
+        <input type="email" name="email" value="Email"><br>
+        <input type="text" name="message" value="Message"><br>
+        <button type="submit" name="button">Send Message</button>
+      </form>
+    </div>
+    <div class="socialLinks button dark">
+      Links to get in touch
+      <ul>
+        <li><a href="">site1</a></li>
+        <li><a href="">site2</a></li>
+        <li><a href="">site3</a></li>
+      </ul>
+    </div>
+   <footer>footer info</footer>
   </div>
   </body>
 </html>
