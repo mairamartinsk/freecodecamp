@@ -5,6 +5,8 @@
     <title>Maíra Martins K - Web Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.arbitrary-anchor.js"></script>
   </head>
@@ -20,55 +22,56 @@
         <li><a href="##about">About</a></li>
         <li><a href="##work">Portfolio</a></li>
         <li><a href="##contact">Contact</a></li>
-        <li><a href="https://dev.mairamartins.com/" target="_blank">Visit Blog</a></li>
+        <li><a href="https://dev.mairamartins.com">Visit Blog</a></li>
       </ul>
     </nav>
     </header>
     <div class="aboutMe" id="about">
+      <h3>About me</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius pharetra dolor nec sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer enim elit, dignissim at elit tincidunt, posuere laoreet magna. Fusce cursus bibendum lorem. Aliquam erat volutpat. Etiam mi tortor, dignissim in suscipit vel, eleifend in leo. Maecenas ac tincidunt erat. Suspendisse sem enim, laoreet a imperdiet ut, cursus sit amet urna.</p>
       <div class="button light">
         <a href="##work">See my Work</a><a href="##contact">Message Me</a>
       </div>
     </div>
     <div class="skills">
+      <h4>Skills</h4>
       <ul>
-        <li>html</li>
-        <li>css</li>
-        <li>javascript</li>
+        <li><i class="devicon-html5-plain"></i></li>
+        <li><i class="devicon-css3-plain"></i></li>
+        <li><i class="devicon-javascript-plain"></i></li>
       </ul>
     </div>
     <div class="portfolio" id="work">
-      Portfolio items
+      <h3>Portfolio</h3>
       <div>
         <ul class="portfolioItems">
-          <li><img src="" alt=""><p>item1</p></li>
-          <li><img src="" alt=""><p>item2</p></li>
-          <li><img src="" alt=""><p>item3</p></li>
-          <li><img src="" alt=""><p>item4</p></li>
+          <li><img src="https://mairamartins.com/imghub/screenshot-portfolio-site.png" alt="screenshot image of responsive portfolio site project"><div class="cta button light"><a href="https://github.com/mairamartinsk/freecodecamp/tree/master/portfolio-site">GitHub</a><a href="https://codepen.io/mairamartinsk/pen/LzwEZV">CodePen</a><a href="https://mairamartinsk.github.io">Live</a></div><p>Responsive Site: Portfolio</p></li>
+          <li><img src="https://mairamartins.com/imghub/screenshot-tribute-stan-lee.png" alt="screenshot image of tribute to stan lee website project"><div class="cta button light"><a href="https://github.com/mairamartinsk/freecodecamp/tree/master/tribute-stan-lee">GitHub</a><a href="https://codepen.io/mairamartinsk/pen/yzRMZQ">CodePen</a></div><p>Responsive Site: Tribute to Stan Lee</p></li>
+          <li><img src="" alt="" class="placeholder"><div class="cta button light"><a href="">Soon!</a></div><p>Coming Soon</p></li>
         </ul>
-      </div>
-      <div class="button dark">
-        <a href="##contact">Get in Touch</a>
       </div>
     </div>
     <div class="contactForm" id="contact">
-      Send me a Message
-      <form class="Contact" action="index.html" method="post">
-        <input type="text" name="Name" value="Name"><br>
-        <input type="email" name="email" value="Email"><br>
-        <input type="text" name="message" value="Message"><br>
+      <h3>Contact me</h3>
+      <form class="Contact" action="https://formspree.io/mairamartinsk@gmail.com" method="POST">
+        <input type="text" name="Name" placeholder="Name"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <input type="text" name="message" placeholder="Message"><br>
         <button type="submit" name="button">Send Message</button>
       </form>
     </div>
-    <div class="socialLinks button dark">
-      Links to get in touch
+    <div class="socialLinks">
+      <h4>Social</h4>
       <ul>
-        <li><a href="">site1</a></li>
-        <li><a href="">site2</a></li>
-        <li><a href="">site3</a></li>
+        <li><a href="https://github.com/mairamartinsk" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i>Github</a></li>
+        <li><a href="https://codepen.io/mairamartinsk/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>CodePen</a></li>
+        <li><a href="https://www.facebook.com/mairamartinsk" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
+        <li><a href="https://www.instagram.com/mairamartinsphotography" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+        <li><a href="https://dev.mairamartins.com/" target="_blank"><i class="fa fa-rss-square" aria-hidden="true"></i>Blog</a></li>
       </ul>
     </div>
-   <footer>footer info</footer>
+   <footer><div class="alignLeft">Developed by Maíra K - 2017.</div>
+   <div class="alignRight button dark"><a href="##top">To the Top</a></div></footer>
   </div>
   </body>
 </html>
