@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Random Quote Machine</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container rounded">
+    <h1 class="display-4 text-center mb-5">Random Quote Machine</h1>
+
+    <blockquote class="blockquote mb-5">
+      <p class="mb-0 text-center"></p>
+      <footer class="blockquote-footer text-right"></footer>
+    </blockquote>
+
+    <div class="d-flex justify-content-center mb-2">
+      <button class="btn btn-dark mr-1 newQuote"><i class="fa fa-quote-left" aria-hidden="true"></i> New Quote</button>
+      <button class="btn btn-info ml-1 tweetQuote"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet Quote</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

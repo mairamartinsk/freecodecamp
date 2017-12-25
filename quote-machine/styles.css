@@ -1,0 +1,20 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #23272b;
+  color: #23272b;
+  height: calc(100% -50px);
+}
+
+.container {
+  margin-top: 50px;
+  background-color:#ffffff;
+  padding: 20px;
+}
+
+.blockquote {
+  width: 70%;
+  margin: 0 auto;
+}
