@@ -21,4 +21,7 @@ Made with love and:
 * Forismatic API
 * Twitter Web Intent
 
+### Usage
+Live Demo on [https://codepen.io/mairamartinsk/pen/OzbGxw](https://codepen.io/mairamartinsk/pen/OzbGxw)
+
 ![Screenshot of the Random Quote Generator](screenshot.png)
