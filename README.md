@@ -8,7 +8,7 @@ Repo for my Freecodecamp tutorials, challenges and projects.
 - [x] [Build a Personal Portfolio Site](https://github.com/mairamartinsk/freecodecamp/tree/master/portfolio-site)
 
 ### Intermediate Projects
-- [ ] Build a Random Quote Machine
+- [x] [Build a Random Quote Machine](https://github.com/mairamartinsk/freecodecamp/tree/master/quote-machine)
 - [ ] Show the Local Weather
 - [ ] Build a Wikipedia Viewer
 - [ ] Use the Twitch.tv JSON API
