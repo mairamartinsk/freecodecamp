@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Weather App</h1>
+  <div class="container">
+      <h3 class="weather_place"></h3>
+      <p class="weather_position"></p>
+      <div class="buttons">
+        <button class="tempC">&deg; C</button>
+        <button class="tempF">&deg; F</button>
+      </div>
+      <img src="" class="weather_icon">
+      <h3 class="weather_desc"></h3>
+      <div class="weather_stats">
+        <ul>
+          <li>Temperature: <span class="--temperature"></span></li>
+          <li>Wind: <span class="--wind"></span></li>
+          <li>humidity: <span class="--humidity"></span></li>
+        </ul>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
