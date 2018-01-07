@@ -1,6 +1,3 @@
-// API ENDPOINT
-// https://en.wikipedia.org/w/api.php?format=json&action=query&list=search&srsearch=Albert%20Einstein
-
 function getWikiResults() {
   var searchTerm = $('input[type="text"]').val();
   $.ajax({
