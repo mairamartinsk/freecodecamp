@@ -23,3 +23,7 @@ $('input[type="text"]').on('keypress', function(event) {
     $(this).val('');
   }
 });
+
+$('button').on('click', function(event) {
+  window.open('https://en.wikipedia.org/wiki/Special:Random', '_blank'); 
+});
