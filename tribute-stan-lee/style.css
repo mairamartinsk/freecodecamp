@@ -6,22 +6,22 @@ body {
   color: #222;
 }
 blockquote {
-    word-spacing: 10px;
-    letter-spacing: 2px;
-    line-height: 1.6;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    color: #12457a;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #12457a;
 }
-p{
+p {
   margin-bottom: 15px;
 }
 h1 {
-    font-size: 120px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 25px;
+  font-size: 120px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 25px;
 }
 h2 {
   font-size: 38px;
@@ -50,6 +50,11 @@ a {
   background-color: black;
   border: 20px solid white;
   padding: 5px;
+}
+.credit {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #222;
 }
 .header {
   grid-area: hdr;
@@ -93,11 +98,11 @@ a {
 
 @media screen and (max-width: 800px) {
   body {
-      margin: 10px 20px;
+    margin: 10px 20px;
   }
   h1 {
-      font-size: 60px;
-      letter-spacing: 15px;
+    font-size: 60px;
+    letter-spacing: 15px;
   }
   h2 {
     font-size: 20px;
@@ -108,11 +113,11 @@ a {
 
 @media screen and (max-width: 1000px) {
   body {
-      margin: 20px 40px;
+    margin: 20px 40px;
   }
   h1 {
-      font-size: 90px;
-      letter-spacing: 15px;
+    font-size: 90px;
+    letter-spacing: 15px;
   }
   h2 {
     font-size: 30px;
@@ -125,54 +130,55 @@ a {
   .thegrid {
     display: grid;
     grid-gap: 20px;
+    align-items: start;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "hdr"
-    "mg1"
-    "qt1"
-    "abt"
-    "mg2"
-    "bks"
-    "mvs"
-    "mg3"
-    "qt2"
-    "trv"
-    "std"
-    "mg4"
-    "ftr"
+      'hdr'
+      'mg1'
+      'qt1'
+      'abt'
+      'mg2'
+      'bks'
+      'mvs'
+      'mg3'
+      'qt2'
+      'trv'
+      'std'
+      'mg4'
+      'ftr';
   }
 
-  @media screen and (min-width: 800px){
+  @media screen and (min-width: 800px) {
     .thegrid {
       grid-template-columns: 2fr 1fr 2fr;
       grid-template-areas:
-      "mg2 mg2 mg2"
-      "hdr hdr hdr"
-      "qt1 qt1 mg1"
-      "abt abt abt"
-      "bks bks qt2"
-      "bks bks mg3"
-      "trv trv mvs"
-      "mg4 mg4 mvs"
-      "std std std"
-      "ftr ftr ftr"
+        'mg2 mg2 mg2'
+        'hdr hdr hdr'
+        'qt1 qt1 mg1'
+        'abt abt abt'
+        'bks bks qt2'
+        'bks bks mg3'
+        'trv trv mvs'
+        'mg4 mg4 mvs'
+        'std std std'
+        'ftr ftr ftr';
     }
   }
-  @media screen and (min-width: 1400px){
+  @media screen and (min-width: 1400px) {
     .thegrid {
       grid-template-columns: 2fr 1fr 2fr 3fr 2fr;
       grid-template-areas:
-      "mg2 mg2 hdr hdr qt2"
-      "qt1 mg3 mg3 abt abt"
-      "qt1 bks bks bks bks"
-      "trv trv mvs mg1 mg1"
-      "trv trv mvs std std"
-      "ftr ftr mvs mg4 mg4"
+        'mg2 mg2 hdr hdr qt2'
+        'qt1 mg3 mg3 abt abt'
+        'qt1 bks bks bks bks'
+        'trv trv mvs mg1 mg1'
+        'trv trv mvs std std'
+        'ftr ftr mvs mg4 mg4';
     }
   }
 }
 
 @supports not (display: grid) {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }

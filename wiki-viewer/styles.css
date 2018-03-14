@@ -6,7 +6,9 @@ html {
   box-sizing: border-box;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   background-repeat: no-repeat;
   box-sizing: inherit;
 }
@@ -22,7 +24,7 @@ a {
 /* STYLES */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   height: 100%;
   background-color: #f5f5f5;
   color: ##212121;
@@ -35,9 +37,9 @@ body {
   background-color: #ffffff;
   margin: 3em auto;
   padding: 2em;
-  box-shadow: 0px 2px 5px 0px rgba(168,168,168,0.5);
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(168,168,168,0.5);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(168,168,168,0.5);
+  box-shadow: 0px 2px 5px 0px rgba(168, 168, 168, 0.5);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(168, 168, 168, 0.5);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(168, 168, 168, 0.5);
 }
 
 input[type="text"] {
@@ -53,20 +55,20 @@ input[type="text"] {
   letter-spacing: 1px;
 }
 
-input[type="text"]::placeholder, {
-  color: #BDBDBD;
+input[type="text"]::placeholder {
+  color: #bdbdbd;
 }
 
 input[type="text"]:hover,
 input[type="text"]:active,
 input[type="text"]:focus {
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
 }
 
 input[type="text"]:hover::placeholder,
 input[type="text"]:active::placeholder,
 input[type="text"]:focus::placeholder {
-  color: #00BCD4;
+  color: #00bcd4;
 }
 
 ul {
@@ -76,13 +78,13 @@ ul {
 
 li {
   margin-top: 3em;
-  border-left: 3px solid #00BCD4;
+  border-left: 3px solid #00bcd4;
   padding-left: 1em;
   display: block;
 }
 
 li:hover {
-  border-left: 3px solid #FFC107;
+  border-left: 3px solid #ffc107;
 }
 
 a {
@@ -90,14 +92,14 @@ a {
 }
 
 a h3 {
-  color: #00BCD4;
+  color: #00bcd4;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 a h3:hover {
-  color: #FFC107;
+  color: #ffc107;
 }
 
 a p {
@@ -116,12 +118,31 @@ button {
   border: 1px solid #f2f2f2;
   background-color: #f2f2f2;
   font-size: 0.8em;
-  color: #00BCD4;
+  color: #00bcd4;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 button:hover {
   color: #f2f2f2;
-  background-color: #00BCD4;
+  background-color: #00bcd4;
+}
+
+h1 {
+  text-align: center;
+  color: #ffc107;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.credit {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #ffc107;
+}
+
+.credit a {
+  display: inline-block;
 }
