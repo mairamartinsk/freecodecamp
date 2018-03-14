@@ -9,8 +9,8 @@ Repo for my Freecodecamp tutorials, challenges and projects.
 
 ### Intermediate Projects
 - [x] [Build a Random Quote Machine](https://github.com/mairamartinsk/freecodecamp/tree/master/quote-machine)
-- [ ] Show the Local Weather
-- [ ] Build a Wikipedia Viewer
+- [x] [Show the Local Weather](https://github.com/mairamartinsk/freecodecamp/tree/master/weather-app)
+- [x] [Build a Wikipedia Viewer](https://github.com/mairamartinsk/freecodecamp/tree/master/wiki-viewer)
 - [ ] Use the Twitch.tv JSON API
 
 ### Advanced Projects
